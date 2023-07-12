@@ -1,0 +1,33 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px;
+  padding-left: 120px;
+  padding-right: 120px;
+  border-bottom: solid 1px #475569;
+}
+
+.nav-items-container {
+  display: flex;
+  align-items: center;
+}
+.nav-items {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+.nav-bar-link-item {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #64748b;
+}
+.logout-btn {
+  background-color: #0284c7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  height: 32px;
+  width: 73px;
+}
