@@ -1,9 +1,18 @@
+.home {
+  min-height: 100vh;
+}
 .home-container {
   padding-left: 50px;
   padding-right: 50px;
   background-color: #f5f7fa;
   border-top: solid 1px #f5f7fa;
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
 }
+
 .home-heading {
   font-size: 40px;
   color: #1e293b;
@@ -17,6 +26,7 @@
 }
 .slider-container {
   padding: 50px;
+  padding-top: 10px;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 10px 10px 10px 10px #28293d14;
@@ -30,11 +40,106 @@
   font-size: 24px;
   color: #1e293b;
 }
-.find-books-btn {
+.slider-component {
+  margin-top: 20px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.find-books-btn-sm {
+  display: none;
+}
+.find-books-btn-lg {
   background-color: #0284c7;
   border: none;
   color: #ffffff;
   height: 36px;
   width: 104px;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.book-link-item {
+  text-decoration: none;
+}
+.slider-item {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-rated-book-image {
+  height: 252px;
+  box-shadow: 5px 5px 5px 5px #28293d14;
+}
+.top-rated-book-title {
+  font-family: 'Inter';
+  text-align: center;
+  color: #334155;
+  font-weight: 600;
+  font-size: 24px;
+}
+.top-rated-book-author {
+  font-family: 'Inter';
+  color: #475569;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .home-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .home-heading {
+    font-size: 20px;
+  }
+  .home-des {
+    font-size: 14px;
+  }
+  .find-books-btn-lg {
+    display: none;
+  }
+  .find-books-btn-sm {
+    display: block;
+    background-color: #0284c7;
+    border: none;
+    color: #ffffff;
+    height: 36px;
+    width: 104px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .slider-head {
+    font-size: 16px;
+  }
+  .slider-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: gray;
+    font-size: 12px;
+    margin-right: 20px;
+  }
+  .top-rated-book-image {
+    height: 152px;
+    box-shadow: 5px 5px 5px 5px #28293d14;
+  }
+  .top-rated-book-title {
+    font-size: 12px;
+  }
+  .top-rated-book-author {
+    font-size: 10px;
+  }
 }

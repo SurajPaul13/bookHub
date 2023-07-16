@@ -35,7 +35,7 @@ class Login extends Component {
 
       const jwtToken = data.jwt_token
       Cookies.set('jwt_token', jwtToken, {expires: 30})
-      history.push('/')
+      history.replace('/')
     } else {
       const error = data.error_msg
       this.setState({displayErrorMsg: true, errorMsg: error})

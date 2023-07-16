@@ -1,0 +1,39 @@
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.failure-view-img {
+  width: 347px;
+  height: 171px;
+}
+.failure-head {
+  color: #475569;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 500;
+}
+.try-again-btn {
+  height: 48px;
+  width: 112px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #0284c7;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .failure-view-img {
+    width: 238px;
+    height: 117.16px;
+  }
+  .failure-head {
+    font-size: 12px;
+  }
+  .try-again-btn {
+    height: 32px;
+    width: 87px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,65 @@
+.bookshelves-link-item {
+  text-decoration: none;
+  color: inherit;
+}
+.bookshelves-book-overview-container {
+  margin-bottom: 20px;
+  display: flex;
+  width: 350px;
+}
+.bookshelves-cover-pic {
+  width: 133px;
+  height: 155px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.bookshelves-book-item-title {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+}
+.bookshelves-book-item-author-name {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 500;
+}
+.bookshelves-rating-container {
+  display: flex;
+  align-items: center;
+}
+.bookshelves-avg-rating {
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+.bookshelves-rating-star {
+  color: #fbbf24;
+  margin-right: 5px;
+  height: 12px;
+}
+.bookshelves-rating {
+  font-family: 'HK Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+}
+.bookshelves-status {
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 500;
+}
+.bookshelves-read-status {
+  font-family: 'Inter';
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #0284c7;
+}
+
+@media screen and (max-width: 600px) {
+  .bookshelves-book-overview-container {
+    width: 250px;
+  }
+  .bookshelves-book-item-title {
+  }
+}
