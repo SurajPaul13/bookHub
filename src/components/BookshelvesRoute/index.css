@@ -17,6 +17,7 @@
   background-color: #ffffff;
   box-shadow: 1px 1px 0px 0px #28293d14;
   padding: 32px;
+  padding-top: 0;
   border-radius: 6px;
   margin-left: 20px;
 }
@@ -171,8 +172,13 @@
     padding: 0px 10px 0px 10px;
     margin-bottom: 20px;
   }
+  .bookshelves-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .search-container {
-    width: 100%;
+    width: 90%;
   }
   .books-container {
     display: flex;
