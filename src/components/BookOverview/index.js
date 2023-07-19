@@ -7,7 +7,7 @@ const BookOverview = props => {
   const {authorName, coverPic, rating, readStatus, title, id} = details
   return (
     <li key={id}>
-      <Link to={`/book/${id}`} className="bookshelves-link-item">
+      <Link to={`/books/${id}`} className="bookshelves-link-item">
         <div className="bookshelves-book-overview-container">
           <img src={coverPic} alt={title} className="bookshelves-cover-pic" />
           <div className="bookshelves-book-overview-details">

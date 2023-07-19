@@ -100,7 +100,7 @@ class Home extends Component {
         {topRatedBooks.map(eachBook => {
           const {id, coverPic, title, authorName} = eachBook
           return (
-            <Link to={`/book/${id}`} className="book-link-item" key={id}>
+            <Link to={`/books/${id}`} className="book-link-item" key={id}>
               <div className="slider-item">
                 <img
                   className="top-rated-book-image"
@@ -108,7 +108,7 @@ class Home extends Component {
                   alt={title}
                 />
                 <h1 className="top-rated-book-title">{title}</h1>
-                <h1 className="top-rated-book-author">{authorName}</h1>
+                <p className="top-rated-book-author">{authorName}</p>
               </div>
             </Link>
           )
